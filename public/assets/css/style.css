@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+
+/*------------Home------------*/
+
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px; /* Add your desired font size */
+  /* Add your desired font weight */
+  color: #be2323; /* Add your desired text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Add smooth transition for color change */
+  
+}
+
+
+
+/*------------Nav style ------------*/
+.navbar-nav a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #6e76a5;
+    border-radius: 10px;
+}
+
+/*------------------------*/
+.container-body{
+    background-color: rgb(159, 143, 143);
+}
+.container-body h1{
+    text-align: center;
+}
+.container-home{
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    text-align: center;
+    text-decoration: solid;
+    background-color: bisque;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Set a high z-index to ensure it's above other elements */
+}
+
+
+
+/*------------Login Page  Style------------*/
+#pwede{
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.message{
+  font-size:13px;
+  
+}
+
+.login-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.box-login{
+    background-color: #fffffff6;
+    height: auto;
+    width: 350px;
+    margin-top: 75px;
+    margin-bottom: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px;
+    border-radius: 25px; 
+    text-align: center;
+}
+input{
+    width: 50%;
+}
+
+.name-school{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px; 
+  color: #000000; 
+
+}
+
+/*------------Admin Dashoboard style------------*/
+
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 80px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+
+
+/* Enrollment Form Style */
+.enroll-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.enroll-head{
+  height: 70px;
+
+
+}
+/*  End Enrollment Form Style */
+.body-assign{
+  display: grid;
+}
+
+
+.selection .form-select{
+  width: 250px;
+  
+}
+
+.selection{
+  display: inline-grid;
+}
+
+.subject{
+  border: 1px solid black;
+}

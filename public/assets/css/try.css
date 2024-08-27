@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 0; /* Collapse the sidebar by default on small screens */
+    }
+
+    #sidebar.active {
+        width: 250px; /* Show the sidebar when the active class is applied */
+    }
+
+    .sidebar-nav {
+        padding-left: 0;
+    }
+
+    .sidebar-item {
+        margin-bottom: 5px;
+    }
+}
+/* ///// */
+
+/* .h-100{
+    position: fixed;
+} */
+
+
+
+.dropdown-menu a:hover {
+    background-color:  rgb(28, 80, 223); /* Change this to your preferred hover background color */
+    color: white;
+}
+
+.card-attendance label{
+    display: block;
+     margin-bottom: 10px;
+ }
+
+.card-attendance input[type=radio] {
+   appearance: none;
+   background-color: #fff;
+   width: 15px;s
+   height: 15px;
+   border: 2px solid #ccc;
+   border-radius: 2px;
+   display: inline-grid;
+   place-content: center; 
+ }
+
+.card-attendance input[type=radio]::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   transform: scale(0);
+   transform-origin: bottom left;
+   background-color: #fff;
+   clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+}
+
+.card-attendance input[type=radio]:checked::before {
+   transform: scale(1);
+}
+
+.card-attendance input[type=radio]:checked.present{
+   background-color:   #4caf50;
+   border: 2px solid #4caf50;
+}
+
+
+.card-attendance input[type=radio]:checked.absent{
+    background-color:   #f44336;
+    border: 2px solid #f44336;
+}
+
+.card-attendance input[type=radio]:checked.tardy{
+    background-color:   #777;
+    border: 2px solid #777;
+}
+/* //// */
+
+
+.icon i.fa-id-card {
+    font-size: 5em; /* Adjust the size as needed */
+    padding-left: 20%;
+    
+  }
+
+  .icon i.fa-chalkboard-user {
+    font-size: 5em; /* Adjust the size as needed */
+    padding-left: 30%;
+    margin-bottom: 5%;
+  }
+
+  .icon i.fa-people-group {
+    font-size: 5em; /* Adjust the size as needed */
+    padding-left: 10%;
+  }
+
+  .icon i.fa-address-card{
+    font-size: 5em; /* Adjust the size as needed */
+    padding-left: 30%;
+    margin-bottom: 5%;
+  }
+
+  .inner p{
+    font-size: 20px;
+    padding: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .small-box-footer{
+    color: #FFF;
+    padding: 5%;
+    margin-top: 2%;
+  }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    opacity: 1;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.275rem;
+    color: var(--bs-emphasis-color);
+}
+
+/* Layout for admin dashboard skeleton */
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Elements Style */
+
+
+.sidebar-logo{
+    padding: 1.15rem;
+    text-align: center;
+}
+
+.sidebar-logo a{
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sidebar-nav{
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-header{
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 0.875rem;
+}
+
+.avatar{
+    height: 40px;
+    width: 40px;
+
+}
+
+.navbar-expand .navbar-nav{
+    margin-left: auto;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after{
+    border: solid;
+    border-width: 0 .075rem .o75rem 0;
+    content:"";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"] .collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+    background: var(--bs-dark-bg-subtle);
+    /* background: #ffffff; */
+
+}
+#sidebar {
+    max-width:264px;
+    min-width: 264px;
+    /* background: var(--bs-dark); */
+    background: #29293d;
+
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-img-logo {
+    text-align: center;
+}
+.sidebar-img-logo img{
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.subject-style{
+background-color: #56565c;
+border: 1px solid #ccc; /* Optional styling for each item */
+border-radius: 20%;
+padding: 5px; /* Optional padding for each item */
+margin: 1px;
+margin: 1px;
+color: #FFF;
+}
+
+
+
+
+/* Sidebar Toggle */
+#sidebar.collapsed{
+    margin-left: -260px;
+}
+
+@media (min-width:768px){
+    .content{
+        max-width: auto;
+        width: auto;
+    }
+}
+    
+
+/* Footer and Nav */
+
+@media (max-width:767.98px) {}
+
+/* Theme Toggler */
+
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-65%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;
+    border: none;
+    background-color: var(--bs-body-color);
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-sun,
+html[data-bs-theme="light"] .theme-toggle .fa-moon {
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    font-size: 1.25rem;
+    color: #FFF;
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+html[data-bs-theme="light"] .theme-toggle .fa-sun {
+    display: none;
+}
+
+.iframe{
+display: flex;
+align-items: center;
+justify-content: center;
+}
